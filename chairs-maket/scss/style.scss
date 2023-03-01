@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import "reset.scss";
+@import "variables.scss";
+@import "templates.scss";
+
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/sale.scss";
+@import "blocks/special.scss";
+@import "blocks/advertising.scss";
+@import "blocks/footer.scss";
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  
+    background-color: $color-gray;
+}

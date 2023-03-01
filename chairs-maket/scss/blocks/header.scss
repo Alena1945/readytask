@@ -1,0 +1,103 @@
+.header {
+    &__nav-first-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 50px;
+        gap: 30px;
+
+        @media (max-width: 460px) {
+            gap: 10px;
+        }
+    }
+
+    &__link {
+        color: $color-dark;
+
+        font-size: $size-first;
+
+        @media (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+    
+    &__main-menu {
+        background-color: $color-white;
+    }
+
+    &__container {
+        @extend %template-container;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 130px;
+
+        @media (max-width: 860px) {
+            justify-content: space-around;
+        }
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    @media (max-width: 750px) {
+        gap: 15px;
+    }
+
+    &__logo-image {
+        @media (max-width: 750px) {
+            width: 40%;
+        }
+    }
+
+    
+    &__text-name {
+        color: $color-green;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+
+        padding-right: 250px;
+
+        @media (max-width: 750px) {
+            flex-direction: column;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+.contact-position {
+    display: flex;
+    align-items: center;
+
+    padding-left: 250px;
+
+    gap: 50px;
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__contact-tel {
+        font-size:  $size-second;
+        font-weight: 400;
+        line-height: 19px;
+
+        @media (max-width: 750px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    &__callback {
+        @extend %template-button;
+
+        color: $color-black;
+    }
+}

@@ -1,0 +1,37 @@
+.nav-menu {
+    &__list {
+        box-sizing: border-box;
+        border-top: 1px solid $color-gray;
+        background-color: $color-white;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        @media ( max-width: 680px ) {
+            gap: 30px;
+        }
+    }
+    &__link {
+        color: $color-black;
+        font-weight: 400;
+        font-size: $size-second;
+        line-height: 20px;
+        text-align: center;
+
+
+        @media ( max-width: 680px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        @media ( max-width: 520px) {
+            font-size: 10px;
+            line-height: 10px;
+            font-weight: 700;
+        }
+    }
+}
